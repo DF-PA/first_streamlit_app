@@ -16,6 +16,6 @@ my_fruit_list=my_fruit_list.set_index('Fruit')
 streamlit.dataframe(my_fruit_list)
 
 #let's put a pick-list here
-streamlit.multiselect("Pick some Fruits:", list(my_fruit_list.index))
+streamlit.multiselect("Pick some Fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
 #display the table
 streamlit.dataframe(my_fruit_list)
